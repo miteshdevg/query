@@ -1,14 +1,14 @@
 {
-  "$schema": "https://raw.githubusercontent.com/TanStack/tanstack.com/main/tanstack-docs-config.schema.json",
+  "$schema": "./new-schema.json",
   "docSearch": {
     "appId": "20TOVD6LOE",
     "apiKey": "35bc6c51aa322700d1383e17c4f669f4",
     "indexName": "tanstackquery"
   },
-  "menu": [
+  "sections": [
     {
-      "label": "API Reference",
-      "children": [
+      "name": "API Reference",
+      "items": [
         {
           "label": "QueryClient",
           "to": "reference/QueryClient"
@@ -45,11 +45,124 @@
           "label": "notifyManager",
           "to": "reference/notifyManager"
         }
+      ],
+      "frameworks": [
+        {
+          "name": "react",
+          "items": [
+            {
+              "label": "useQuery",
+              "to": "framework/react/reference/useQuery"
+            },
+            {
+              "label": "useQueries",
+              "to": "framework/react/reference/useQueries"
+            },
+            {
+              "label": "useInfiniteQuery",
+              "to": "framework/react/reference/useInfiniteQuery"
+            },
+            {
+              "label": "useMutation",
+              "to": "framework/react/reference/useMutation"
+            },
+            {
+              "label": "useIsFetching",
+              "to": "framework/react/reference/useIsFetching"
+            },
+            {
+              "label": "useIsMutating",
+              "to": "framework/react/reference/useIsMutating"
+            },
+            {
+              "label": "useMutationState",
+              "to": "framework/react/reference/useMutationState"
+            },
+            {
+              "label": "useSuspenseQuery",
+              "to": "framework/react/reference/useSuspenseQuery"
+            },
+            {
+              "label": "useSuspenseInfiniteQuery",
+              "to": "framework/react/reference/useSuspenseInfiniteQuery"
+            },
+            {
+              "label": "useSuspenseQueries",
+              "to": "framework/react/reference/useSuspenseQueries"
+            },
+
+            {
+              "label": "QueryClientProvider",
+              "to": "framework/react/reference/QueryClientProvider"
+            },
+            {
+              "label": "useQueryClient",
+              "to": "framework/react/reference/useQueryClient"
+            },
+            {
+              "label": "queryOptions",
+              "to": "framework/react/reference/queryOptions"
+            },
+            {
+              "label": "infiniteQueryOptions",
+              "to": "framework/react/reference/infiniteQueryOptions"
+            },
+            {
+              "label": "QueryErrorResetBoundary",
+              "to": "framework/react/reference/QueryErrorResetBoundary"
+            },
+            {
+              "label": "useQueryErrorResetBoundary",
+              "to": "framework/react/reference/useQueryErrorResetBoundary"
+            },
+            {
+              "label": "hydration",
+              "to": "framework/react/reference/hydration"
+            }
+          ]
+        },
+        {
+          "name": "vue",
+          "items": [
+            {
+              "label": "useQuery",
+              "to": "framework/vue/reference/useQuery"
+            },
+            {
+              "label": "useQueries",
+              "to": "framework/vue/reference/useQueries"
+            },
+            {
+              "label": "useInfiniteQuery",
+              "to": "framework/vue/reference/useInfiniteQuery"
+            },
+            {
+              "label": "useMutation",
+              "to": "framework/vue/reference/useMutation"
+            },
+            {
+              "label": "useIsFetching",
+              "to": "framework/vue/reference/useIsFetching"
+            },
+            {
+              "label": "useIsMutating",
+              "to": "framework/vue/reference/useIsMutating"
+            },
+            {
+              "label": "useQueryClient",
+              "to": "framework/vue/reference/useQueryClient"
+            },
+            {
+              "label": "hydration",
+              "to": "framework/vue/reference/hydration"
+            }
+          ]
+        }
       ]
     },
     {
-      "label": "ESLint",
-      "children": [
+      "name": "ESLint",
+      "items": [
         {
           "label": "ESLint Plugin Query",
           "to": "eslint/eslint-plugin-query"
@@ -66,13 +179,14 @@
           "label": "No Rest Destructuring",
           "to": "eslint/no-rest-destructuring"
         }
-      ]
+      ],
+      "frameworks": []
     }
   ],
   "frameworkMenus": [
     {
-      "framework": "react",
-      "menuItems": [
+      "name": "react",
+      "items": [
         {
           "label": "Getting Started",
           "children": [
@@ -389,80 +503,6 @@
               "to": "framework/react/plugins/createPersister"
             }
           ]
-        },
-        {
-          "label": "API Reference",
-          "children": [
-            {
-              "label": "useQuery",
-              "to": "framework/react/reference/useQuery"
-            },
-            {
-              "label": "useQueries",
-              "to": "framework/react/reference/useQueries"
-            },
-            {
-              "label": "useInfiniteQuery",
-              "to": "framework/react/reference/useInfiniteQuery"
-            },
-            {
-              "label": "useMutation",
-              "to": "framework/react/reference/useMutation"
-            },
-            {
-              "label": "useIsFetching",
-              "to": "framework/react/reference/useIsFetching"
-            },
-            {
-              "label": "useIsMutating",
-              "to": "framework/react/reference/useIsMutating"
-            },
-            {
-              "label": "useMutationState",
-              "to": "framework/react/reference/useMutationState"
-            },
-            {
-              "label": "useSuspenseQuery",
-              "to": "framework/react/reference/useSuspenseQuery"
-            },
-            {
-              "label": "useSuspenseInfiniteQuery",
-              "to": "framework/react/reference/useSuspenseInfiniteQuery"
-            },
-            {
-              "label": "useSuspenseQueries",
-              "to": "framework/react/reference/useSuspenseQueries"
-            },
-
-            {
-              "label": "QueryClientProvider",
-              "to": "framework/react/reference/QueryClientProvider"
-            },
-            {
-              "label": "useQueryClient",
-              "to": "framework/react/reference/useQueryClient"
-            },
-            {
-              "label": "queryOptions",
-              "to": "framework/react/reference/queryOptions"
-            },
-            {
-              "label": "infiniteQueryOptions",
-              "to": "framework/react/reference/infiniteQueryOptions"
-            },
-            {
-              "label": "QueryErrorResetBoundary",
-              "to": "framework/react/reference/QueryErrorResetBoundary"
-            },
-            {
-              "label": "useQueryErrorResetBoundary",
-              "to": "framework/react/reference/useQueryErrorResetBoundary"
-            },
-            {
-              "label": "hydration",
-              "to": "framework/react/reference/hydration"
-            }
-          ]
         }
       ]
     },
@@ -705,43 +745,6 @@
             {
               "label": "Persister",
               "to": "framework/vue/examples/persister"
-            }
-          ]
-        },
-        {
-          "label": "API Reference",
-          "children": [
-            {
-              "label": "useQuery",
-              "to": "framework/vue/reference/useQuery"
-            },
-            {
-              "label": "useQueries",
-              "to": "framework/vue/reference/useQueries"
-            },
-            {
-              "label": "useInfiniteQuery",
-              "to": "framework/vue/reference/useInfiniteQuery"
-            },
-            {
-              "label": "useMutation",
-              "to": "framework/vue/reference/useMutation"
-            },
-            {
-              "label": "useIsFetching",
-              "to": "framework/vue/reference/useIsFetching"
-            },
-            {
-              "label": "useIsMutating",
-              "to": "framework/vue/reference/useIsMutating"
-            },
-            {
-              "label": "useQueryClient",
-              "to": "framework/vue/reference/useQueryClient"
-            },
-            {
-              "label": "hydration",
-              "to": "framework/vue/reference/hydration"
             }
           ]
         }
